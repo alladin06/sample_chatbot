@@ -9,7 +9,7 @@ model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
 
 import docx2txt
 
-file_path = pathlib.Path('WA_chatbot.docx')
+file_path = pathlib.Path('WA_chatbot_sample.docx')
 content = docx2txt.process(file_path)
 
 if "messages" not in st.session_state:
